@@ -24,7 +24,7 @@ const App = () => {
 
         <SectionWrapper children={<About />} idName="about" />
 
-        <Experience />
+        <SectionWrapper children={<Experience />} idName="work" />
 
         <Tech />
 
