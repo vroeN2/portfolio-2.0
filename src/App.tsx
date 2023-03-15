@@ -10,6 +10,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import SectionWrapper from "./components/SectionWrapper";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
           <Hero />
         </div>
 
-        <About />
+        <SectionWrapper children={<About />} idName="about" />
 
         <Experience />
 
