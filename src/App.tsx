@@ -28,7 +28,7 @@ const App = () => {
 
         <SectionWrapper children={<Tech />} idName="" />
 
-        <SectionWrapper children={<Works />} idName="works" />
+        <SectionWrapper children={<Works />} idName="" />
 
         <SectionWrapper children={<Feedbacks />} idName="feedback" />
 
