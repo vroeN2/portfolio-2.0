@@ -26,11 +26,11 @@ const App = () => {
 
         <SectionWrapper children={<Experience />} idName="work" />
 
-        <Tech />
+        <SectionWrapper children={<Tech />} idName="" />
 
-        <Works />
+        <SectionWrapper children={<Works />} idName="works" />
 
-        <Feedbacks />
+        <SectionWrapper children={<Feedbacks />} idName="feedback" />
 
         <div className="relative z-0">
           <Contact />
