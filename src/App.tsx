@@ -1,5 +1,45 @@
+import { BrowserRouter } from "react-router-dom";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
+import SectionWrapper from "./components/SectionWrapper";
+
 const App = () => {
-  return <div>3D dev portfolio</div>;
+  return (
+    <BrowserRouter>
+      <div className="realative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+
+          <Hero />
+        </div>
+
+        <SectionWrapper children={<About />} idName="about" />
+
+        <SectionWrapper children={<Experience />} idName="work" />
+
+        <SectionWrapper children={<Tech />} idName="" />
+
+        <SectionWrapper children={<Works />} idName="" />
+
+        <SectionWrapper children={<Feedbacks />} idName="feedback" />
+
+        <div className="relative z-0">
+          <Contact />
+
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 };
 
 export default App;
