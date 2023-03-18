@@ -1,5 +1,5 @@
-import { technologies } from "../../constants";
-import BallCanvas from "../canvas/BallCanvas";
+import { technologies } from "../../../constants";
+import BallCanvas from "../../canvas/BallCanvas";
 
 const Tech = () => {
   return (

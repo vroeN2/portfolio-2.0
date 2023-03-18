@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
-import { github } from "../../assets";
 import { projects } from "../../constants";
 import { fadeIn, textVariant } from "../../../utills/motion";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../Cards/ProjectCard";
 
 const Works = () => {
   return (

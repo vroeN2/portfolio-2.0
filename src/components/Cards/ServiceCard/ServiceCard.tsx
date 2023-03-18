@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../../utills/motion";
+import { fadeIn, textVariant } from "../../../../utills/motion";
 
 interface ServiceCardProps {
   index: number;
