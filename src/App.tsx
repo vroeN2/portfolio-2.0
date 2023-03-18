@@ -30,7 +30,7 @@ const App = () => {
 
         <SectionWrapper children={<Works />} idName="" />
 
-        <SectionWrapper children={<Feedbacks />} idName="feedback" />
+        <SectionWrapper children={<Feedbacks />} idName="" />
 
         <div className="relative z-0">
           <Contact />

@@ -5,10 +5,10 @@ import {
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../../styles";
-import { experiences } from "../../constants";
-import { textVariant } from "../../../utills/motion";
-import ExperienceCard from "../ExperienceCard";
+import { styles } from "../../../styles";
+import { experiences } from "../../../constants";
+import { textVariant } from "../../../../utills/motion";
+import ExperienceCard from "../../Cards/ExperienceCard";
 
 const Experience = () => {
   return (

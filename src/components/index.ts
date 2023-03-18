@@ -4,14 +4,14 @@ import {
   ComputersCanvas,
   StarsCanvas,
 } from "./canvas";
-import Hero from "./Hero";
+import Hero from "./views/Hero";
 import Navbar from "./Navbar";
-import About from "./About";
-import Tech from "./Tech";
-import Experience from "./Experience";
+import About from "./views/About";
+import Tech from "./views/Tech";
+import Experience from "./views/Experience";
 import Works from "./Works";
-import Feedbacks from "./Feedbacks";
-import Contact from "./Contact";
+import Feedbacks from "./views/Feedbacks";
+import Contact from "./views/Contact";
 
 export {
   Hero,

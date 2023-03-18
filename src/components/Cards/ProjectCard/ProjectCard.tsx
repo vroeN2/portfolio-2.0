@@ -1,7 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../../utills/motion";
-import { github } from "../../assets";
+import { fadeIn, textVariant } from "../../../../utills/motion";
+import { github } from "../../../assets";
 
 interface ProjectProps {
   index: number;
