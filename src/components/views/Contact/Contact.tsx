@@ -7,17 +7,56 @@ import { slideIn } from "../../../../utills/motion";
 import EarthCanvas from "../../canvas/EarthCanvas";
 
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement>(null);
-  const [form, setForm] = useState({
+  const initialFormState = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+  const formRef = useRef<HTMLFormElement>(null);
+  const [form, setForm] = useState(initialFormState);
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: unknown) => {};
+  const handleChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e: unknown) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_kmvkz9q",
+        "template_fpqjvzt",
+        {
+          from_name: form.name,
+          to_name: "Maciej",
+          from_email: form.email,
+          to_email: "mjszachariasz@gmail.com",
+          message: form.message,
+        },
+        "KLW2kwPQCXpWeTgY_"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm(initialFormState);
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -67,7 +106,7 @@ const Contact = () => {
               rows={7}
               name="message"
               value={form.message}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e)}
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
