@@ -1,45 +1,34 @@
-import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
-import SectionWrapper from "./components/SectionWrapper";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
 
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <BrowserRouter>
-      <div className="realative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-
-          <Hero />
-        </div>
-
-        <SectionWrapper children={<About />} idName="about" />
-
-        <SectionWrapper children={<Experience />} idName="work" />
-
-        <SectionWrapper children={<Tech />} idName="" />
-
-        <SectionWrapper children={<Works />} idName="" />
-
-        <SectionWrapper children={<Feedbacks />} idName="" />
-
-        <div className="relative z-0">
-          <SectionWrapper children={<Contact />} idName="contact" />
-
-          <StarsCanvas />
-        </div>
+    <div className="App">
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/vite.svg" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-    </BrowserRouter>
-  );
-};
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </div>
+  )
+}
 
-export default App;
+export default App
