@@ -4,6 +4,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
 
 const Stars = () => {
+  //@ts-ignore
   const ref = useRef<MutableRefObject>(null);
 
   const sphere = random.inSphere(new Float32Array(7500), { radius: 1.2 });
@@ -15,6 +16,7 @@ const Stars = () => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
+      {/* @ts-ignore */}
       <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
