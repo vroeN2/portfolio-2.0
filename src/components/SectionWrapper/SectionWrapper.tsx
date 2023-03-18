@@ -4,7 +4,6 @@ import { staggerContainer } from "../../../utills/motion";
 
 interface SectionWrapperProps {
   children: JSX.Element;
-  // children: React.ReactNode;
   idName: string;
 }
 

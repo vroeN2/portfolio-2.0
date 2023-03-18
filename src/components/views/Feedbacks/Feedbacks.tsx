@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../../styles";
-import { fadeIn, textVariant } from "../../../../utills/motion";
+import { textVariant } from "../../../../utills/motion";
 import { testimonials } from "../../../constants";
 import FeedbackCard from "../../Cards/FeedbackCard";
 

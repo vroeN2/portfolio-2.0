@@ -3,9 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import Stars from "../Stars/Stars";
 import { Preload } from "@react-three/drei";
 
-type Props = {};
-
-const StarsCanvas = (props: Props) => {
+const StarsCanvas = () => {
   return (
     <div className="w-full h-full absolute inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
