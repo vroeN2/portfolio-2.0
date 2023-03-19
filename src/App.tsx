@@ -30,7 +30,8 @@ const App = () => {
 
         <SectionWrapper children={<Works />} idName="" />
 
-        <SectionWrapper children={<Feedbacks />} idName="" />
+        {/* Nothing to display except placeholders - no point */}
+        {/* <SectionWrapper children={<Feedbacks />} idName="" /> */}
 
         <div className="relative z-0">
           <SectionWrapper children={<Contact />} idName="contact" />

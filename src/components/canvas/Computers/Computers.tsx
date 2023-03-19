@@ -23,6 +23,7 @@ const Computers = ({ isMobile }: ComputersInterface) => {
       />
 
       <primitive
+        dispose={null}
         object={computer.scene}
         scale={isMobile ? 0.6 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}

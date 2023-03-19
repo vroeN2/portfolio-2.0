@@ -95,10 +95,11 @@ const technologies = [
     name: "Sass",
     icon: sass,
   },
-  {
-    name: "less",
-    icon: less,
-  },
+  // unfortunately with this one there is too much contexts, and the oldes is being removed - had to pick one to comment out
+  // {
+  //   name: "less",
+  //   icon: less,
+  // },
   {
     name: "Three JS",
     icon: threejs,
