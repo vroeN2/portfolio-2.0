@@ -185,7 +185,7 @@ const projects = [
   {
     name: "docmatic",
     description:
-      "My first commercial job as front-end developer. I was responsible for creating Tags feature for the documents section. I wal also developing hero page for the page containing all company's demos.",
+      "My first commercial job as front-end developer. I was responsible for creating Tags feature for the documents section. I was also developing hero page for the page containing all company's demos.",
     tags: [
       {
         name: "react",
